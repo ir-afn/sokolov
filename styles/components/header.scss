@@ -1,0 +1,57 @@
+@import 'variables.scss';
+// @import 'general.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px 16px 0;
+  background-color: transparent;
+
+  &__logo {
+    width: 93px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.hidden {
+  width: 18px;
+  background-color: transparent;
+}
+
+.burger-menu__item {
+  width: 18px;
+  height: 1.2px;
+  margin-bottom: 5px;
+  background-color: $white;
+}
+
+@media (min-width: 700px) {
+  .header {
+    max-width: 1440px;
+    padding: 60px 46px 0;
+  
+    &__logo {
+      width: 188px;
+    }
+  }
+
+  .burger-menu__item {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 8px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+

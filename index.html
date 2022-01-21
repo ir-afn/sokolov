@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+  <title>Sokolov Atelier</title>
+</head>
+<!-- hdr будет фиксд с прозрачным фоном. позиционироваться поверх hero с фоновым рисунком-->
+<body>
+  <div class="main-wrap">
+    <header class="header">
+      <nav class="nav">
+        <div class="hidden"></div>
+        <img class="header__logo" src="/img/logo_ru-white.svg" alt="Sokolov logo">
+        <div class="burger-menu">
+          <div class="burger-menu__item"></div>
+          <div class="burger-menu__item"></div>
+          <div class="burger-menu__item"></div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="hero">
+        <div class="content-wrap">
+          <h1 class="hero__heading">SOKOLOV ATELIER</h1>
+          <p class="hero__text">Теперь вы&nbsp;можете создать собственное уникальное украшение SOKOLOV вместе с&nbsp;дизайнерами бренда</p>
+          <div class="hero__btn-wrap">
+            <a href="#" class="button mob-btn">в конструктор</a>
+            <div class="hero__link-wrap">
+              <a href="#" class="hero__link">индивидуальное изделие</a>
+              <svg class="hero__link-arrow" width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.92V8.92H12L6.5 14.42L7.92 15.84L15.84 7.92L7.92 0L6.5 1.42L12 6.92H0Z" fill="white"/>
+              </svg>
+            </div> 
+          </div>       
+        </div>
+      </div>
+      <section class="features">
+        <div class="content-wrap">
+          <h2 class="features__heading">ПОЧЕМУ SOKOLOV ATELIER?</h2>
+          <article class="features__block">
+            <img class="features__img" src="/img/design.jpg" alt="ring">
+            <h3 class="features__subheading">Эксклюзивный дизайн</h3>
+            <p class="features__text">В&nbsp;котором ваша идея воплощается профессиональным дизайнером украшений</p>
+          </article>
+          <article class="features__block">
+            <img class="features__img" src="/img/quality.jpg" alt="watch">
+            <h3 class="features__subheading">Безупречное качество</h3>
+            <p class="features__text">Cочетающее инновационные технологии и&nbsp;ручную работу</p>
+          </article>
+          <article class="features__block">
+            <img class="features__img" src="/img/materials.jpg" alt="gems">
+            <h3 class="features__subheading">Высококлассные материалы</h3>
+            <p class="features__text">Банковский драгоценный металл и&nbsp;ювелирные камни от&nbsp;надёжных поставщиков</p>
+          </article>
+          <article class="features__block">
+            <img class="features__img" src="/img/approach.jpg" alt="sketch">
+            <h3 class="features__subheading">Индивидуальный подход</h3>
+            <p class="features__text">Мы&nbsp;сможем воплотить любое драгоценное желание по&nbsp;разработанному совместно с&nbsp;вами эскизу</p>
+          </article>
+        </div>
+      </section>
+      <section class="request">
+        <div class="content-wrap">
+          <div class="mobile-wrap">
+            <h2 class="request__heading">напишите, обсудим вашу идею вместе</h2> <!--общий класс для заголовков-->
+            <div class="request__list">
+              <div class="request__count">01</div>
+              <p class="request__rules">Оставьте заявку на создание украшения по&nbsp;индивидуальному дизайну</p>
+              <div class="request__count">02</div>
+              <p class="request__rules">Если у вас имеются свои эскизы, наброски или фотографии желаемого украшения, приложите их&nbsp;к&nbsp;заявке</p>
+            </div>
+            <form action="" class="request__form">
+              <label class="request__form__label" for="name">Ваше имя</label>
+              <input class="request__form__input" type="text" id="name" placeholder="Иван Иванов" required>
+              <label class="request__form__label" for="phone">Ваш телефон</label>
+              <input class="request__form__input" type="tel" id="phone" placeholder="+7 (___)___-__-__" required>
+              <label class="request__form__label" for="email">Ваш email</label>
+              <input class="request__form__input" type="mail" id="email" placeholder="ivanov@email.ru" required> <!--pattern?-->
+              <label class="request__form__label" for="message">Сообщение</label>
+              <textarea class="request__form__input textarea" id="message" placeholder="Подробно опишите ваши пожелания по изделию или вставьте сюда ссылку на издение" required></textarea>
+              <div class="checkbox-wrap">
+                <input class="check-input" type="checkbox" id="check">
+                <span class="check-box"></span>
+                <label class="request__form__label checkbox-text" for="check">Я согласен с&nbsp;<a href="#">условиями</a> обработки персональных данных</label>
+              </div>
+              <button class="button request__btn" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="showcase">
+        <div class="content-wrap">
+          <h2 class="showcase__heading">Создаём вместе</h2>
+          <p class="showcase__text">С каждым ювелирным изделием в&nbsp;твоей шкатулке связана особая история. 
+            Все эти ускользающие мгновения, которые хочется сохранить навсегда&nbsp;—&nbsp;в&nbsp;украшениях&nbsp;SOKOLOV</p>
+          <div class="showcase__gallery">
+            <figure class="showcase__gallery__item">
+              <img class="showcase__gallery__item__img" src="/img/blue-ring.jpg" alt="Кольцо «топаз с&nbsp;фианитами»">
+              <figcaption class="showcase__gallery__item__caption">Кольцо «топаз с&nbsp;фианитами»</figcaption>
+            </figure>
+            <figure class="showcase__gallery__item">
+              <img class="showcase__gallery__item__img" src="/img/soul-pendant.jpg" alt="Колье по мотивам мультфильма Душа">
+              <figcaption class="showcase__gallery__item__caption">Колье по&nbsp;мотивам мультфильма Душа</figcaption>
+            </figure>
+            <figure class="showcase__gallery__item">
+              <img class="showcase__gallery__item__img" src="/img/fish-ring.jpg" alt="Кольцо с&nbsp;рубинами «Рыбка»">
+              <figcaption class="showcase__gallery__item__caption">Кольцо с&nbsp;рубинами «Рыбка»</figcaption>
+            </figure>
+            <figure class="showcase__gallery__item">
+              <img class="showcase__gallery__item__img" src="/img/coin-pendant.jpg" alt="Подвеска, белое золото, со&nbsp;старинной монетой">
+              <figcaption class="showcase__gallery__item__caption">Подвеска, белое золото, со&nbsp;старинной монетой</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
