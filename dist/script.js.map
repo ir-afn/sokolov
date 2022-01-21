@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log","checkbox","document","getElementById","check","addEventListener","evt","classList","add"],"mappings":"AAAAA,QAAQC,IAAI,OAEZ,MAAMC,SAAWC,SAASC,eAAeC,OACzCH,SAASI,iBAAiB,UAAU,SAAqBC,GACvDL,SAASM,UAAUC,IAAI","file":"script.js"}
